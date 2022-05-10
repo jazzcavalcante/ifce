@@ -6,3 +6,7 @@ Deployment Lista 1: http://jazielcavalcante.pe.hu/lista1html/
 -------------------------------------------
 
 Deployment Trabalho 1: http://jazielcavalcante.pe.hu/trabalho1html/
+
+-------------------------------------------
+
+Deployment Currículo: http://jazielcavalcante.tech/curriculo/
