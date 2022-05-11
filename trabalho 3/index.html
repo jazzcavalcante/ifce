@@ -11,27 +11,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <div class="loader">
-        <div></div>
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
     <header>
-        <div class="logo"><h1>MaxiPrint</h1></div>
-
-        <nav>
-            <ul>
-                <a href="#"><li>Quem somos</li></a>
-                <a href="#"><li>Produtos</li></a>
-                <a href="#"><li>Suporte</li></a>
-            </ul>
-        </nav>
+        <div class="container">
+            
+        </div>
     </header>
 
     <script>
-        $(window).on('load', function() {
-            $(".loader").fadeOut(1000);
-            $("#container").fadeIn(1000);
-        })
+        // Page loading animation
+	$(window).on('load', function() {
+		if($('.cover').length){
+			$('.cover').parallax({
+				imageSrc: $('.cover').data('image'),
+				zIndex: '1'
+			});
+		}
+
+		$("#preloader").animate({
+			'opacity': '0'
+		}, 700, function(){
+			setTimeout(function(){
+				$("#preloader").css("visibility", "hidden").fadeOut();
+			}, 400);
+		});
+	});
     </script>
 </body>
 </html>
