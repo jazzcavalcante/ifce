@@ -2,104 +2,96 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Trabalho - Acessibilidade no HTML</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
 </head>
 
 <body>
-  <h1>Acessibilidade no HTML</h1>
+  <h1>Formulário</h1>
+  <form style="max-width: 600px">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
 
-  <hr>
+      <label for="nome">Nome: </label>
+      <input size="50" id="nome" type="text" placeholder="Escreva seu nome aqui">
 
-  <h1>Textos e listas</h1>
+      <br>
 
-  <h1>Parágrafo 1</h1>
-  <h2>Parágrafo 2</h2>
-  <h3>Parágrafo 3</h3>
-  <h4>Parágrafo 4</h4>
-  <h5>Parágrafo 5</h5>
-  <h6>Parágrafo 6</h6>
+      <label for="nascimento">Data de nascimento: </label>
+      <input id="nascimento" type="text" placeholder="Ex: 21/07/2003">
 
-  <p>Um conteúdo textual precisa de divisões bem definidas, por exemplo.</p>
+      <br>
+      
+      <label for="endereco">Endereço: </label>
+      <input size="50" id="endereco" type="text" placeholder="Ex: Rua aleatória, numero desconhecido">
+      
+      <br>
 
-  <ol>
-    <li>Títulos construídos com elementos de título</li>
-    <li>Parágrafos divididos com elementos de parágrafos</li>
-    <li>Listas sendo construídas com elementos de lista</li>
-  </ol>
+      <label for="nascimento">Bairro: </label>
+      <input id="nascimento" type="text" placeholder="Ex: Jereissati">
 
-  <hr>
+      <label for="cidade">Cidade: </label>
+      <input id="cidade" type="text" placeholder="Ex: Maracanaú">
 
-  <h1>Imagens com atributo Alt</h1>
-  
-  <img width="500" height="500" src="https://source.unsplash.com/random" alt="Imagem aleatória, muda assim que atualiza a paǵina.">
+      <br>
 
-  <hr>
+      <label for="cep">CEP: </label>
+      <input id="cep" type="text" placeholder="Ex: 61000-00">
 
-  <h1>Links</h1>
+      <label for="estado">Estado: </label>
+      <select name="estadoselect" id="estado">
+        <option value="----">----</option>
+        <option value="ceara">Ceará</option>
+        <option value="saopaulo">São Paulo</option>
+        <option value="minasgerais">Minas Gerais</option>
+      </select>
 
-  <p>É importante usar o atributo title para descrever melhor a ação do link.</p>
+    </fieldset>
 
-  <a href="https://www.google.com.br/" title="Link para a página do Google.">Google</a>
+    <fieldset>
+      <legend>Dados profissionais</legend>
 
-  <hr>
+      <label for="nome">Natura do Cargo: </label><br>
+      <input type="radio" id="gerencia" name="gerencia_carg" value="Gerência">
+      <label for="gerencia">Gêrencia</label>
+      <input type="radio" id="financeiro" name="financeiro_carg" value="Financeiro">
+      <label for="financeiro">Financeiro</label>
+      <input type="radio" id="recepcao" name="recepcao_carg" value="Recepção">
+      <label for="recepcao">Recepção</label>
+      <input type="radio" id="administrativo" name="administrativo_carg" value="Administrativo">
+      <label for="Administrativo">Administrativo</label>
+      <input type="radio" id="juridico" name="juridico_carg" value="Jurídico">
+      <label for="juridico">Jurídico</label>
 
-  <h1>Idioma</h1>
+      <br><br>
 
-  <p>Declarar o idioma da página na tag html</p>
+      <label for="nome">Área de Interesse: </label><br>
+      <input type="checkbox" id="computacao" name="computacao_carg" value="Computação">
+      <label for="computacao">Computação</label>
+      <input type="checkbox" id="quimica" name="quimica_carg" value="Química">
+      <label for="quimica">Química</label>
+      <input type="checkbox" id="meioambiente" name="meioambiente_carg" value="Meio Ambiente">
+      <label for="meioambiente">Meio Ambiente</label>
+      <input type="checkbox" id="engenharia" name="engenharia_carg" value="Engenharia">
+      <label for="engenharia">Engenharia</label>
+      <input type="checkbox" id="matematica" name="matematica_carg" value="Matemática">
+      <label for="matematica">Matemática</label>
 
-  <hr>
+      <br>
 
-  <h1>Linguagem Clara</h1>
+      <label for="placeholder">Mensagem: </label>
+      <br>
+      <textarea cols="70" rows="10" maxlength="250" placeholder="Digite a sua mensagem"></textarea>
 
-  <p>Usar uma linguagem clara, que seja fácil de entender e tentar evitar caracteres que não possam ser lidos claramente por um leitor de tela, exemplo: em vez de escrever 1-8, escreva 1 a 8. Evite abreviações e gírias, dificultam bastante a leitura não só para os softwares de leitura de tela, mas também para o leitor no geral.</p>
+      <br><br>
 
-  <hr>
+      <button><a href="tabela.html">Enviar</a></button>
+      
+    </fieldset>
 
-  <h1>Usar a nova estrutura do HTML5</h1>
-
-  <p>Forma antiga:</p>
-
-  <code>
-    <p id="header"></p>
-
-    <p>&lt;div id="nav"&gt;&lt;/div&gt;</p>
-    
-    <p>&lt;div class="article"&gt;&lt;/div&gt;</p>
-    <p>&lt;div class="article"&gt;&lt;/div&gt;</p>
-    
-    <p>&lt;div class="footer"&gt;&lt;/div&gt;</p>
-  </code>
-
-  <p>A mesma estruutura com o uso dos novos elementos HTML5:</p>
-
-  <code>
-    <p>&lt;header&gt;&lt;/header&gt;</p>
-    
-    <p>&lt;nav&gt;&lt;/nav&gt;</p>
-
-    <p>&lt;article&gt;&lt;/article&gt;</p>
-    <p>&lt;article&gt;&lt;/article&gt;</p>
-    
-    <p>&lt;footer&gt;&lt;/footer&gt;</p>
-  </code>
-
-  <hr>
-
-  <h1>Adicionais:</h1>
-
-  <ul>
-    <li>Evitar usar fontes de ícones, pois não são um formato acessível;</li>
-    <li>Não transmita informações somente atráves de cores (tabelas)</li>
-    <li>Links sublinados são úteis para usuários com dificuldade para discernir contraste</li>
-    <li>Textos de links devem ser descritivos (não apenas "clique aqui")</li>
-    <li>A rolagem infinita pode ser problemática para navegação por teclado;</li>
-    <li>Teste sua página sem CSS, para avaliar a estrutura e verificar se o conteúdo continua fazendo sentido;</li>
-    <li>Teste a navegação por teclado e o leitor de telas em seu site;</li>
-    <li>Se possível, disponibilize uma visualização do site em modo noturno.</li>
-  </ul>
-
+  </form>
 </body>
 
 </html>
