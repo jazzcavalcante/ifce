@@ -49,3 +49,18 @@ body {
         transform: rotate(360deg);
     }
 }
+
+header {
+    width: 80%;
+    height: 70px;
+    margin: auto;
+
+    display: flex;
+    align-content: space-between;
+
+    background-color: var(--secondary);
+}
+
+.logo {
+    margin-left: ;
+}
