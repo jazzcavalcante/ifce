@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalho 3</title>
+    <title>Jaziel Cavalcante - Trabalho 3</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+  <div id="preloader">
+    <div class="jumper">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
+  </div>
     
   <section class="showcase">
     <header>
-      <h2 class="logo">LOGO</h2>
+      <h2 class="logo">Jaziel Cavalcante</h2>
       <div class="toggle"></div>
     </header>
 
@@ -30,50 +30,61 @@
     <div class="overlay"></div>
 
     <div class="text">
-      <h2>Never Stop To </h2> 
-      <h3>Exploring The World</h3>
+      <h2>UX/UI</h2> 
+      <h3>Designer</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat.</p>
-      <a href="#">Explore</a>
+      <a href="#">Portfólio</a>
     </div>
 
     <ul class="social">
-      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+      <li><a href="https://www.facebook.com/ojazielcavalcante" target="_blank">
+        <img src="https://i.ibb.co/x7P24fL/facebook.png">
+      </a></li>
+      <li><a href="https://twitter.com/oteachb" target="_blank">
+        <img src="https://i.ibb.co/Wnxq2Nq/twitter.png">
+      </a></li>
+      <li><a href="https://www.instagram.com/ojazielcavalcante/" target="_blank">
+        <img src="https://i.ibb.co/ySwtH4B/instagram.png">
+      </a></li>
     </ul>
+    
+    <footer>
+      <p class="footer">Todos os direitos reservados.</p>
+    </footer>
   </section>
+
 
   <div class="menu">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Destination</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre mim</a></li>
+      <li><a href="#">Portfólio</a></li>
+      <li><a href="#">Contato</a></li>
     </ul>
   </div>
 
-    <script>
-        // Page loading animation
-	$(window).on('load', function() {
-		if($('.cover').length){
-			$('.cover').parallax({
-				imageSrc: $('.cover').data('image'),
-				zIndex: '1'
-			});
-		}
+ <!-- Javascript -->
+  <script>
+    // Page loading animation
+    $(window).on('load', function() {
+      if($('.cover').length){
+        $('.cover').parallax({
+          imageSrc: $('.cover').data('image'),
+          zIndex: '1'
+        });
+      }
 
-		$("#preloader").animate({
-			'opacity': '0'
-		}, 700, function(){
-			setTimeout(function(){
-				$("#preloader").css("visibility", "hidden").fadeOut();
-			}, 400);
-		});
-	});
+		  $("#preloader").animate({
+			  'opacity': '0'
+		  }, 700, function(){
+			  setTimeout(function(){
+				  $("#preloader").css("visibility", "hidden").fadeOut();
+			  }, 600);
+		  });
+	  });
 
     const menuToggle = document.querySelector('.toggle');
       const showcase = document.querySelector('.showcase');
@@ -82,6 +93,6 @@
         menuToggle.classList.toggle('active');
         showcase.classList.toggle('active');
       })
-    </script>
+  </script>
 </body>
 </html>
