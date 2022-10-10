@@ -8,3 +8,4 @@ Deployment Trabalho 2: https://jazielcavalcante.tech/trabalho1html/
 Deployment Trabalho 3: https://jazielcavalcante.tech/
 -------------------------------------------
 Deployment Currículo: http://jazielcavalcante.tech/curriculo/
+-------------------------------------------
