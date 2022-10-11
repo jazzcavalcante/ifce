@@ -166,3 +166,17 @@ h2 {
     text-transform: uppercase;
     color: var(--terciary);
 }
+
+/* FOOTER */
+footer {
+    margin-top: 70px;
+    padding: 22px;
+
+    text-align: center;
+    background-color: var(--secondary);
+}
+
+footer p {
+    color: var(--terciary);
+    font-weight: 500;
+}
