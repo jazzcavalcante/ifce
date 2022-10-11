@@ -22,49 +22,147 @@ body {
 }
 
 header {
-    overflow: hidden;
+    display: flex;
     background-color: var(--secondary);
 }
 
 nav {
     width: 1280px;
     height: 70%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div:first-child {
+    flex-grow: 0;
+}
+  
+div:last-child {
+    flex-grow: 1;
 }
 
 .logo {
-    float: left;
-    padding: none;
-    margin: none;
     height: 60px;
-    width: 30%;
 }
 
 .logo img {
+    margin-top: 2.5%;
     width: 15%;
-    float: left;
-    padding: 12px 0;
-}
-
-.menu {
-    float: right;
-    height: 100%;
 }
 
 .menu ul {
-    text-align: center;
-    float: right;
-    margin: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 35%;
 }
 
 .menu li {
-    display: inline-block;
+    list-style-type: none;
 }
 
 .menu li a {
-    display: inline-block;
-    padding: 0em 1.2em;
     text-decoration: none;
+
     font-weight: 500;
-    line-height: 60px;
+    color: var(--terciary);
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: row;
+
+    width: 1280px;
+    gap: 30px;
+}
+
+.space1 {
+    margin-top: 70px;
+}
+
+.space2 {
+    margin-top: 30px;
+}
+
+/* CARD */
+
+.ativado {
+    border-bottom: 5px solid var(--green);
+}
+
+.desativado {
+    border-bottom: 5px solid var(--red);
+}
+
+.manutencao {
+    border-bottom: 5px solid var(--gray);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 413px;
+    height: 350px;
+    border-radius: 20px;
+
+    background-color: var(--secondary);
+}
+
+.ar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    background-color: var(--terciary);
+}  
+
+.ar img {
+    width: 148px;
+    height: 95px;
+}
+
+h2 {
+    margin: 22px 0;
+    font-weight: 600;
+
+    text-align: center;
+    color: var(--terciary);
+}
+
+/* STATUS*/
+
+.status {
+    width: 361px;
+    height: 60px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.status-ativado {
+    background-color: var(--green);
+}
+
+.status-desativado {
+    background-color: var(--red);
+}
+
+.status-manutencao {
+    background-color: var(--gray);
+}
+
+.status p {
+    font-size: 14pt;
+    font-weight: 600;
+
+    text-transform: uppercase;
     color: var(--terciary);
 }
