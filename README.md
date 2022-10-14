@@ -1,6 +1,12 @@
 # ifce
 Atividades de Programação para Web 1
 
+-------------------------------------------
+
+Deployment Bom Ar: https://jazielcavalcante.tech/trabalhosifce/bomar
+
+-------------------------------------------
+
 Deployment Trabalho 1: https://jazielcavalcante.tech/lista1html/
 
 -------------------------------------------
